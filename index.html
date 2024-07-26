@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+    <title>Checklist</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style> 
+</style>
+<body>
+    <div class="container">
+        <h1>Checklist</h1>
+        
+        <div class="form-section">
+            <h2>Personal</h2>
+            <form id="personal-form">
+                <input type="text" id="personal-item" placeholder="Item Name">
+                <input type="number" id="personal-price" placeholder="Item Price">
+                <button type="button" onclick="addItem('personal')">Add</button>
+            </form>
+            <ul id="personal-list" class="item-list"></ul>
+            <h3>Total Price: $<span id="personal-total">0</span></h3>
+        </div>
+        
+        <hr>
+
+        <div class="form-section">
+            <h2>Home</h2>
+            <form id="home-form">
+                <input type="text" id="home-item" placeholder="Item Name">
+                <input type="number" id="home-price" placeholder="Item Price">
+                <button type="button" onclick="addItem('home')">Add</button>
+            </form>
+            <ul id="home-list" class="item-list"></ul>
+            <h3>Total Price: $<span id="home-total">0</span></h3>
+        </div>
+        
+        <hr>
+
+        <div class="form-section">
+            <h2>Car</h2>
+            <form id="car-form">
+                <input type="text" id="car-item" placeholder="Item Name">
+                <input type="number" id="car-price" placeholder="Item Price">
+                <button type="button" onclick="addItem('car')">Add</button>
+            </form>
+            <ul id="car-list" class="item-list"></ul>
+            <h3>Total Price: $<span id="car-total">0</span></h3>
+        </div>
+        
+        <hr>
+
+        <div class="form-section">
+            <h2>Other</h2>
+            <form id="other-form">
+                <input type="text" id="other-item" placeholder="Item Name">
+                <input type="number" id="other-price" placeholder="Item Price">
+                <button type="button" onclick="addItem('other')">Add</button>
+            </form>
+            <ul id="other-list" class="item-list"></ul>
+            <h3>Total Price: $<span id="other-total">0</span></h3>
+        </div>
+
+        <hr>
+
+        <div class="total-section">
+            <h2>Grand Total: $<span id="grand-total">0</span></h2>
+        </div>
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
